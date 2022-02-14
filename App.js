@@ -11,7 +11,7 @@ export default function useHeadphone() {
       setIsHeadphoneConnected(result.audioJack || result.bluetooth)
     })
     return () => {
-      //@ts-ignore
+
       if (HeadphoneDetection.remove) HeadphoneDetection.remove()
     }
   }, [])
